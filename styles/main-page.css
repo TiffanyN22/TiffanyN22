@@ -44,11 +44,10 @@
 
 /* personal projects and extracurricular */
 .personal-projects-container, .extracurriculars-container{
-
-  margin: 40px 80px; /* TODO: make more general? */
-
+  margin: 40px 80px; /* TODO: increase horizontal margin? */
   display: flex;
   flex-direction: row;
+  /* min-width: 700px; */
 }
 .personal-projects-container{
   border: 15px solid rgb(124, 0, 249);
@@ -93,6 +92,7 @@
   padding: 6px 14px;
   border-radius: 4px;
   margin-top: 10px;
+  cursor: pointer;
   transition: background-color 0.2s,
     color 0.2s,
     opacity 0.2s;
@@ -118,10 +118,26 @@
   opacity: 0.8;
 }
 
-.personal-projects-image{
+.personal-projects-image, .extracurriculars-image{
   width: 400px;
   height: 225px;
   object-fit: cover;
+}
+
+@media (max-width: 850px){
+  .personal-projects-container, .extracurriculars-container{
+    flex-direction: column;
+  }
+  .personal-projects-text, .extracurriculars-text{
+    order: 2;
+  }
+  .personal-projects-image, .extracurriculars-image{
+    order: 1; 
+    width: 100%;
+    height: 100%;
+    min-height: 175px;
+    object-fit: cover;
+  }
 }
 
 /* Coding Languages */
@@ -130,6 +146,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 700px;
 }
 
 .coding-languages-header{
@@ -181,11 +198,25 @@
   background-color: rgb(232, 24, 186);
 }
 
+@media (max-width: 775px){
+  .c-plus-plus-container, 
+  .c-container, 
+  .python-container, 
+  .java-container,
+  .swift-container,
+  .html-container,
+  .css-container,
+  .javascript-container,
+  .sql-container{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
 .language-icon{
   width: 17px;
   height: auto;
 }
-
 
 .language-text{
   padding-left: 10px;
