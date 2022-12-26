@@ -37,6 +37,7 @@
 
 .profile-image{
   width: 300px;
+  height: 100%;
   margin-left: 40px;
   border: 10px solid rgb(229, 193, 0);
 }
@@ -110,7 +111,7 @@
 }
 .view-extracurriculars-button:hover{
   color: white;
-  background-color: rgb(232, 24, 186);;
+  background-color: rgb(232, 24, 186);
 }
 
 .view-projects-button:active, .view-extracurriculars-button:active{
@@ -121,4 +122,72 @@
   width: 400px;
   height: 225px;
   object-fit: cover;
+}
+
+/* Coding Languages */
+.coding-languages-container{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coding-languages-header{
+  color: rgb(8, 0, 58);
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 25px;
+}
+
+.coding-languages-row-1, .coding-languages-row-2{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.coding-languages-row-2{
+  margin-bottom: 25px;
+}
+
+.c-plus-plus-container, 
+.c-container, 
+.python-container, 
+.java-container,
+.swift-container,
+.html-container,
+.css-container,
+.javascript-container,
+.sql-container {
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 40px;
+  font-size: 20px;
+  margin-left: 15px;/* TODO: not hard code or edit when screen size gets smaller */
+  margin-right: 15px;
+}
+.c-plus-plus-container, .java-container, .css-container{
+  background-color: rgb(124, 0, 249);
+}
+.c-container, .swift-container, .javascript-container{
+  background-color: rgb(229, 193, 0);
+}
+.python-container, .html-container, .sql-container{
+  background-color: rgb(232, 24, 186);
+}
+
+.language-icon{
+  width: 17px;
+  height: auto;
+}
+
+
+.language-text{
+  padding-left: 10px;
+  font-weight: 400;
 }
