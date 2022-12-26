@@ -4,15 +4,14 @@
   /* background-color: pink; */
   font-size: 50px;
   text-align: center;
-
 }
 
 /* about me section */
-
 .about-me-container{
   display: flex;
   flex-direction: row;
-  margin: 40px 100px;
+  margin: 40px 80px;
+  /* TODO: min width or media  */
 }
 
 .about-me-text-container{
@@ -26,7 +25,6 @@
   /* background-color: lightpink; */
   font-weight: 500;
   font-size: 40px;
-  margin: 0;
 }
 
 .bio{
@@ -34,7 +32,6 @@
   /* background-color: lightblue; */
   font-weight: 400;
   font-size: 25px;
-  margin: 0;
   padding-left: 20px;
 }
 
@@ -42,4 +39,86 @@
   width: 300px;
   margin-left: 40px;
   border: 10px solid rgb(229, 193, 0);
+}
+
+/* personal projects and extracurricular */
+.personal-projects-container, .extracurriculars-container{
+
+  margin: 40px 80px; /* TODO: make more general? */
+
+  display: flex;
+  flex-direction: row;
+}
+.personal-projects-container{
+  border: 15px solid rgb(124, 0, 249);
+}
+.extracurriculars-container{
+  border: 15px solid rgb(232, 24, 186);
+}
+
+.personal-projects-text, .extracurriculars-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  padding: 30px;
+
+  flex: 1;
+}
+
+.personal-projects-heading, .extracurriculars-heading{
+  font-weight: 500;
+  font-size: 30px;
+}
+.personal-projects-heading{
+  color: rgb(124, 0, 249);
+}
+.extracurriculars-heading{
+  color: rgb(232, 24, 186);
+}
+
+.personal-projects-info, .extracurriculars-info{
+  color: rgb(8, 0, 58);
+  /* background-color: white; */
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.view-projects-button, .view-extracurriculars-button{
+  background-color: white;
+  font-size: 18px;
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background-color 0.2s,
+    color 0.2s,
+    opacity 0.2s;
+}
+.view-projects-button{
+  color: rgb(124, 0, 249);
+  border-color: rgb(124, 0, 249);
+}
+.view-extracurriculars-button{
+  color: rgb(232, 24, 186);
+  border-color: rgb(232, 24, 186);;
+}
+.view-projects-button:hover{
+  color: white;
+  background-color: rgb(124, 0, 249);
+}
+.view-extracurriculars-button:hover{
+  color: white;
+  background-color: rgb(232, 24, 186);;
+}
+
+.view-projects-button:active, .view-extracurriculars-button:active{
+  opacity: 0.8;
+}
+
+.personal-projects-image{
+  width: 400px;
+  height: 225px;
+  object-fit: cover;
 }

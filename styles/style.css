@@ -2,3 +2,11 @@ body{
     background-color: rgba(8, 0, 58, 1);
     font-family: Saira Condensed, Arial;
 }
+
+button{
+    font-family: Saira Condensed, Arial;
+}
+
+p{
+    margin: 0;
+}
