@@ -17,18 +17,48 @@
     <h1> Coding Projects </h1>
 
     <section>
-      <!-- Snake AI project -->
+      <!-- Mafia Moderator Project -->
+      <div class="mafia-moderator-container">
+        <div class="mafia-image-container">
+          <img class="mafia-settings-image" src="images/projects/mafia-moderator-settings.png">
+          <img class="mafia-night-image" src="images/projects/mafia-moderator-night.png">
+        </div>
+        <div class="project-text">
+          <p class="mafia-heading">Mafia Moderator</p>
+          <p class="project-description">This app acts as a moderator for a game of Mafia by allowing the user to enter the 
+            number of players and player names, randomly assigning a role for each player, and facilitating the night and 
+            voting phase by keeping track of which players are alive and when either team wins. This app was written in 
+            December 2022 using <span class="mafia-concepts">Swift</span>, including <span class="mafia-concepts">SwiftUI</span>, 
+            <span class="mafia-concepts">UIKit</span>, and <span class="mafia-concepts">Storyboard</span>.
+          </p>
+          <div class="project-button-container">
+            <button  class="mafia-github-button" onclick="window.open('https://github.com/TiffanyN22/Mafia-Moderator');">
+              <div class="button-text-container">
+                <i class="fa-brands fa-github"></i>
+                <p class="button-text">View Github</p>
+              </div>
+            </button>
+            <button class="mafia-demo-button" onclick="window.open('https://github.com/TiffanyN22/Mafia-Moderator/blob/main/MafiaModeratorDemo.gif');"">
+              <div class="button-text-container">
+                <i class="fa-solid fa-laptop-code"></i>
+                <p class="button-text">View Demo</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Snake AI Project -->
       <div class="snake-ai-container">
-        <div class="snake-ai-text">
+        <div class="project-text">
           <p class="snake-ai-heading">Snake Game AI</p>
-          <p class="snake-ai-description">The project is an AI for a modified game of Snake that generates a map with
+          <p class="project-description">The project is an AI for a modified game of Snake that generates a map with
             random obstacles and food, uses the <span class="snake-ai-concepts"> breadth-first search algorithm </span> 
             to find a path from the food to the snake's head, moves the snake to the food until it reaches its target 
             length or until there is no path from the snake to the food, and includes an option for the user to visualize 
             bfs and/or path generation. The program was coded in <span class="snake-ai-concepts">python</span> using 
             <span class="snake-ai-concepts">pygame </span> in November 2022.
           </p>
-          <!-- TODO: add icon to button -->
           <div class="project-button-container">
             <button  class="snake-ai-github-button" onclick="window.open('https://github.com/TiffanyN22/AI-Seminars/tree/main/SnakeAI');">
               <div class="button-text-container">
@@ -44,9 +74,85 @@
             </button>
           </div>
         </div>
-        <!-- TODO: change image -->
         <img class="snake-ai-image" src="images/projects/snake-ai.png">
       </div>
+
+      <!-- Metaphor Generator Project -->
+      <div class="metaphor-container">
+        <img class="metaphor-image" src="images/projects/metaphor-generator.png">
+        <div class="project-text">
+          <p class="metaphor-heading">Metaphor Generator and Topic Analysis</p>
+          <p class="project-description">This program uses <span class="metaphor-concepts">GPT3</span> and 
+            <span class="metaphor-concepts">OpenAI's API</span> to generate a synthetic dataset of 
+            metaphors, <span class="metaphor-concepts">sklearn</span> and <span class="metaphor-concepts">pandas 
+            dataframe </span> to create and train a model to predict the topic of each metaphor, and includes 
+            code to generate similes on a user-inputted topic. The project was coded in <span class="metaphor-concepts">
+            python</span> in October 2022.
+          </p>
+          <div class="project-button-container">
+            <button  class="metaphor-github-button" onclick="window.open('https://github.com/TiffanyN22/AI-Seminars/tree/main/GPT3MetaphorGenerator');">
+              <div class="button-text-container">
+                <i class="fa-brands fa-github"></i>
+                <p class="button-text">View Github</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- WD^2 Project -->
+      <div class="wdwd-container">
+        <div class="project-text">
+          <p class="wdwd-heading">What Do We Do</p>
+          <p class="project-description"> The purpose of (WD)^2, or What Do We Do, is to help people make plans
+            around an event by finding parking lots and resturants within a specified radius. This website
+            uses the <span class="wdwd-concepts">Inrix API</span> to find nearby parking lots, 
+            <span class="wdwd-concepts">Yelp API</span> to find restaurants, and <span class="wdwd-concepts">Google
+            Maps API</span> to display the locations and addresses. This involves using <span class="wdwd-concepts">
+            RESTful APIs</span>, and the code was written in <span class="wdwd-concepts">HTML</span>, 
+            <span class="wdwd-concepts">CSS</span>, and <span class="wdwd-concepts">Javascript</span> in November 2022.
+          </p>
+          <div class="project-button-container">
+            <button  class="wdwd-github-button" onclick="window.open('https://github.com/Fernando0422/WD-2');">
+              <div class="button-text-container">
+                <i class="fa-brands fa-github"></i>
+                <p class="button-text">View Github</p>
+              </div>
+            </button>
+          </div>
+        </div>
+        <img class="wdwd-image" src="images/projects/wdwd.png">
+      </div>
+
+       <!-- Most Likely To Project -->
+       <div class="most-likely-to-container">
+        <div class="most-likely-to-image-container">
+          <img class="most-likely-to-image-1" src="images/projects/most-likely-to-1.png">
+          <img class="most-likely-to-image-2" src="images/projects/most-likely-to-2.png">
+        </div>
+        <div class="project-text">
+          <p class="most-likely-to-heading">Most Likely To</p>
+          <p class="project-description"> This app generates and displays prompts from a list of over 50 for a game 
+            of "Most Likely To." It was written using <span class="most-likely-to-concepts">Swift</span> with 
+            <span class="most-likely-to-concepts">SwiftUI</span> in December 2022.
+          </p>
+          <div class="project-button-container">
+            <button  class="most-likely-to-github-button" onclick="window.open('https://github.com/TiffanyN22/Mafia-Moderator');">
+              <div class="button-text-container">
+                <i class="fa-brands fa-github"></i>
+                <p class="button-text">View Github</p>
+              </div>
+            </button>
+            <button class="most-likely-to-demo-button" onclick="window.open('https://github.com/TiffanyN22/Mafia-Moderator/blob/main/MafiaModeratorDemo.gif');"">
+              <div class="button-text-container">
+                <i class="fa-solid fa-laptop-code"></i>
+                <p class="button-text">View Demo</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
     </section>
   </body>
 </html>
