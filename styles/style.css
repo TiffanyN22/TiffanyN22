@@ -1,12 +1,20 @@
 body{
-    background-color: rgba(8, 0, 58, 1);
-    font-family: Saira Condensed, Arial;
+  background-color: rgba(8, 0, 58, 1);
+  font-family: Saira Condensed, Arial;
 }
 
 button{
-    font-family: Saira Condensed, Arial;
+  font-family: Saira Condensed, Arial;
 }
 
 p{
-    margin: 0;
+  margin: 0;
+}
+
+h1{
+  color: rgb(232, 24, 186);
+  font-weight: 500;
+  /* background-color: pink; */
+  font-size: 50px;
+  text-align: center;
 }

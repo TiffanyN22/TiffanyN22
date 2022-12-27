@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Projects </title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2a09f2242a.js" crossorigin="anonymous"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/projects.css">
+  </head>
+  <body>
+    <h1> Coding Projects </h1>
+
+    <section>
+      <!-- Snake AI project -->
+      <div class="snake-ai-container">
+        <div class="snake-ai-text">
+          <p class="snake-ai-heading">Snake Game AI</p>
+          <p class="snake-ai-description">The project is an AI for a modified game of Snake that generates a map with
+            random obstacles and food, uses the <span class="snake-ai-concepts"> breadth-first search algorithm </span> 
+            to find a path from the food to the snake's head, moves the snake to the food until it reaches its target 
+            length or until there is no path from the snake to the food, and includes an option for the user to visualize 
+            bfs and/or path generation. The program was coded in <span class="snake-ai-concepts">python</span> using 
+            <span class="snake-ai-concepts">pygame </span> in November 2022.
+          </p>
+          <!-- TODO: add icon to button -->
+          <div class="project-button-container">
+            <button  class="snake-ai-github-button" onclick="window.open('https://github.com/TiffanyN22/AI-Seminars/tree/main/SnakeAI');">
+              <div class="button-text-container">
+                <i class="fa-brands fa-github"></i>
+                <p class="button-text">View Github</p>
+              </div>
+            </button>
+            <button class="snake-ai-demo-button" onclick="window.open('https://github.com/TiffanyN22/AI-Seminars/blob/main/SnakeAI/SnakeAIDemo.gif');"">
+              <div class="button-text-container">
+                <i class="fa-solid fa-laptop-code"></i>
+                <p class="button-text">View Demo</p>
+              </div>
+            </button>
+          </div>
+        </div>
+        <!-- TODO: change image -->
+        <img class="snake-ai-image" src="images/projects/snake-ai.png">
+      </div>
+    </section>
+  </body>
+</html>
