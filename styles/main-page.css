@@ -1,4 +1,8 @@
 /* about me section */
+.name-heading{
+  color:rgb(232, 24, 186)
+}
+
 .about-me-container{
   display: flex;
   flex-direction: row;
