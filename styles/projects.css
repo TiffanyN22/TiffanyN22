@@ -110,7 +110,7 @@ button{
   border-color: rgb(232, 24, 186);
 }
 
-.snake-ai-github-button:hover, .snake-ai-demo-button:hover
+.snake-ai-github-button:hover, .snake-ai-demo-button:hover,
 .most-likely-to-github-button:hover, .most-likely-to-demo-button:hover{
   color: white;
   background-color: rgb(124, 0, 249);
