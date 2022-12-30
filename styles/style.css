@@ -1,6 +1,7 @@
 body{
   background-color: rgba(8, 0, 58, 1);
   font-family: Saira Condensed, Arial;
+  padding-top: 40px; /* for navbar */
 }
 
 button{
@@ -15,4 +16,35 @@ h1{
   font-weight: 500;
   font-size: 50px;
   text-align: center;
+}
+
+/* navbar */
+.navbar{
+  position: fixed; /* make it sick */
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100; /* put at top */
+
+  background-color: rgb(124, 0, 249);
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.navbar-item {
+  /* height: 50px; */
+  /* width: 150px; */
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 20px;
+
+  font-family:  Saira Condensed, Arial;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-item:hover{
+  background-color: rgb(97, 0, 193);
 }
