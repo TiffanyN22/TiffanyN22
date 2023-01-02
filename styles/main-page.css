@@ -1,13 +1,13 @@
 /* about me section */
 .name-heading{
-  color:rgb(232, 24, 186)
+  color:rgb(232, 24, 186);
+  margin-bottom: 5px;
 }
 
 .about-me-container{
   display: flex;
   flex-direction: row;
   margin: 40px 80px;
-  /* TODO: min width or media  */
 }
 
 .about-me-text-container{
@@ -218,4 +218,41 @@
 .language-text{
   padding-left: 10px;
   font-weight: 400;
+}
+
+/* connect */
+.connect-container{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.connect-heading{
+  color: rgb(229, 193, 0);
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.connect-places-container{
+  margin-left: 20px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.connect-github,
+.connect-linkedin{
+  margin-bottom: 5px;
+}
+
+.connect-text{
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 5px;
 }
