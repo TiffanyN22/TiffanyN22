@@ -6,7 +6,8 @@
 .metaphor-container,
 .wdwd-container,
 .mafia-moderator-container,
-.most-likely-to-container{
+.most-likely-to-container, 
+.focus-pal-container{
   margin: 40px 80px; /* TODO: increase horizontal margin? */
   display: flex;
   flex-direction: row;
@@ -17,7 +18,8 @@
 .most-likely-to-container{
   border: 15px solid rgb(124, 0, 249);
 }
-.metaphor-container{
+.metaphor-container,
+.focus-pal-container{
   border: 15px solid rgb(229, 193, 0);
 }
 .wdwd-container, 
@@ -39,7 +41,8 @@
 .metaphor-heading,
 .wdwd-heading,
 .mafia-heading,
-.most-likely-to-heading {
+.most-likely-to-heading,
+.focus-pal-heading {
   font-weight: 500;
   font-size: 28px;
   text-align: center;
@@ -48,7 +51,8 @@
 .most-likely-to-heading{
   color: rgb(124, 0, 249);
 }
-.metaphor-heading{
+.metaphor-heading,
+.focus-pal-heading{
   color: rgb(229, 193, 0);
 }
 .wdwd-heading, 
@@ -67,7 +71,8 @@
 .most-likely-to-concepts{
   color: rgb(124, 0, 249);
 }
-.metaphor-concepts{
+.metaphor-concepts,
+.focus-pal-concepts{
   color: rgb(229, 193, 0);
 }
 .wdwd-concepts, 
@@ -96,11 +101,13 @@ button{
 }
 
 .snake-ai-github-button, .snake-ai-demo-button,
-.most-likely-to-github-button, .most-likely-to-demo-button{
+.most-likely-to-github-button, .most-likely-to-demo-button
+{
   color: rgb(124, 0, 249);
   border-color: rgb(124, 0, 249);
 }
-.metaphor-github-button{
+.metaphor-github-button,
+.focus-pal-github-button, .focus-pal-website-button{
   color: rgb(229, 193, 0);
   border-color: rgb(229, 193, 0);
 }
@@ -115,7 +122,8 @@ button{
   color: white;
   background-color: rgb(124, 0, 249);
 }
-.metaphor-github-button:hover{
+.metaphor-github-button:hover,
+.focus-pal-github-button:hover, .focus-pal-website-button:hover{
   color: white;
   background-color: rgb(229, 193, 0);
 }
@@ -161,7 +169,8 @@ img{
   object-fit: cover;
 }
 .mafia-image-container,
-.most-likely-to-image-container{
+.most-likely-to-image-container,
+.focus-pal-image-container{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -178,21 +187,39 @@ img{
 .most-likely-to-image-1{
   margin-right:0;
 }
+.focus-pal-task-image, .focus-pal-calendar-image{
+  height: 250px;
+  width: auto;
+  /* margin: 20px 10px; */
+  margin-left: 0px;
+  margin-right: 20px;
+  border: none;
+}
 
-@media (max-width: 1050px) and (min-width: 881px){
+@media (max-width: 1050px) and (min-width: 880px){
   .metaphor-image{
     width: 325px;
   }
   .wdwd-image{
     width: 325px;
   }
+  .focus-pal-task-image, .focus-pal-calendar-image{
+    width: 165px;
+    height: auto;
+    margin-bottom: 7px;
+    margin-top: 7px;
+  }
+  /* .focus-pal-image-container{
+    flex-direction: column;
+  } */
 }
 @media (max-width: 880px){
   .snake-ai-container, 
   .metaphor-container, 
   .wdwd-container, 
   .mafia-moderator-container,
-  .most-likely-to-container{
+  .most-likely-to-container,
+  .focus-pal-container{
     flex-direction: column;
     min-height: 300px;
     margin-left: 30px;
@@ -226,7 +253,23 @@ img{
     min-height: 175px;
     object-fit: contain;
   }
+  .focus-pal-task-image, .focus-pal-calendar-image{
+    width: 185px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
   .project-text{
     padding-top: 15px;
+  }
+}
+
+@media (max-width: 520px){
+  .focus-pal-task-image, .focus-pal-calendar-image{
+    width: 155px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
