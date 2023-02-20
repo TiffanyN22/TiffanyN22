@@ -7,7 +7,8 @@
 .wdwd-container,
 .mafia-moderator-container,
 .most-likely-to-container, 
-.focus-pal-container{
+.focus-pal-container,
+.myGov-container{
   margin: 40px 80px; /* TODO: increase horizontal margin? */
   display: flex;
   flex-direction: row;
@@ -15,7 +16,8 @@
   align-items: center;
 }
 .snake-ai-container, 
-.most-likely-to-container{
+.most-likely-to-container,
+.myGov-container{
   border: 15px solid rgb(124, 0, 249);
 }
 .metaphor-container,
@@ -68,7 +70,8 @@
   text-align: center;
 }
 .snake-ai-concepts,
-.most-likely-to-concepts{
+.most-likely-to-concepts,
+.myGov-concepts{
   color: rgb(124, 0, 249);
 }
 .metaphor-concepts,
@@ -100,6 +103,7 @@ button{
   margin-right: 12px;
 }
 
+.myGov-github-button, .myGov-demo-button,
 .snake-ai-github-button, .snake-ai-demo-button,
 .most-likely-to-github-button, .most-likely-to-demo-button
 {
@@ -117,6 +121,7 @@ button{
   border-color: rgb(232, 24, 186);
 }
 
+.myGov-github-button:hover, .myGov-github-button:hover,
 .snake-ai-github-button:hover, .snake-ai-demo-button:hover,
 .most-likely-to-github-button:hover, .most-likely-to-demo-button:hover{
   color: white;
@@ -168,23 +173,20 @@ img{
   height: auto;
   object-fit: cover;
 }
-.mafia-image-container,
-.most-likely-to-image-container,
+.app-container
 .focus-pal-image-container{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.mafia-settings-image, .mafia-night-image,
-.most-likely-to-image-1, .most-likely-to-image-2{
+.app1, .app2{
   height: 315px;
   width: auto;
   object-fit: cover;
   border: none;
 }
-.mafia-settings-image, 
-.most-likely-to-image-1{
+.app1{
   margin-right:0;
 }
 .focus-pal-task-image, .focus-pal-calendar-image{
@@ -214,6 +216,7 @@ img{
   } */
 }
 @media (max-width: 880px){
+  .myGov-container,
   .snake-ai-container, 
   .metaphor-container, 
   .wdwd-container, 
@@ -231,8 +234,7 @@ img{
   .snake-ai-image,
   .metaphor-image,
   .wdwd-image,
-  .mafia-image-container,
-  .most-likely-to-image-container{
+  .app-container{
     order: 1; 
     height: 100%;
     width: 100%;
@@ -242,12 +244,10 @@ img{
     padding-top: 15px;
     border: none;
   }
-  .mafia-night-image,
-  .most-likely-to-image-2{
+  .app2{
     margin-left: 10px;
   }
-  .mafia-settings-image, .mafia-night-image,
-  .most-likely-to-image-1, .most-likely-to-image-2{
+  .app1, .app2{
     margin-top: 15px;
     max-height: 300px;
     min-height: 175px;
