@@ -173,7 +173,7 @@ img{
   height: auto;
   object-fit: cover;
 }
-.app-container
+.app-container,
 .focus-pal-image-container{
   display: flex;
   flex-direction: row;
