@@ -181,15 +181,7 @@
   margin-bottom: 25px;
 }
 
-.c-plus-plus-container, 
-.c-container, 
-.python-container, 
-.java-container,
-.swift-container,
-.html-container,
-.css-container,
-.javascript-container,
-.sql-container {
+.language-container {
   color: white;
   border-radius: 4px;
   display: flex;
@@ -202,26 +194,18 @@
   margin-left: 15px;/* TODO: not hard code or edit when screen size gets smaller */
   margin-right: 15px;
 }
-.c-plus-plus-container, .java-container, .css-container{
+.purple-language{
   background-color: rgb(124, 0, 249);
 }
-.c-container, .swift-container, .javascript-container{
+.yellow-language{
   background-color: rgb(229, 193, 0);
 }
-.python-container, .html-container, .sql-container{
+.pink-language{
   background-color: rgb(232, 24, 186);
 }
 
 @media (max-width: 775px){
-  .c-plus-plus-container, 
-  .c-container, 
-  .python-container, 
-  .java-container,
-  .swift-container,
-  .html-container,
-  .css-container,
-  .javascript-container,
-  .sql-container{
+  .language-container{
     margin-left: 5px;
     margin-right: 5px;
   }
