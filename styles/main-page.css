@@ -1,13 +1,31 @@
 /* about me section */
 .name-heading{
-  color:rgb(232, 24, 186);
+  color: rgb(232, 24, 186);
   margin-bottom: 5px;
+  display: inline;
 }
 
+.name-heading-container{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about-me-heading-container{
+  text-align: left;
+}
+
+.about-me-heading{
+  color: rgb(229, 193, 0);
+  margin-bottom: 5px;
+  display: inline;
+  margin-top: 0;
+  font-size: 40px;
+}
 .about-me-container{
   display: flex;
   flex-direction: row;
   margin: 40px 80px;
+  align-items: center;
 }
 
 .about-me-text-container{
@@ -19,7 +37,19 @@
 .about-me{
   color: rgb(229, 193, 0);
   font-weight: 500;
-  font-size: 40px;
+  font-size: 35px;
+}
+
+#changing-word{
+  border-right: .05em solid rgb(229, 193, 0); 
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: blink-caret .75s step-end infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(229, 193, 0); }
 }
 
 .bio{
@@ -49,7 +79,8 @@
     flex-direction: column;
     text-align: center;
   }
-  .about-me{
+  .about-me-heading-container{
+    margin-top: 15px;
     text-align: center;
   }
   .about-me-text-container{

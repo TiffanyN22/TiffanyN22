@@ -23,18 +23,92 @@
     </nav>
 
     <!-- heading -->
-    <h1 class="name-heading"> Hello World, It's Tiffany Nguyen </h1>>
+    <div class="name-heading-container">
+      <h1 class="name-heading"> Hello World, it's Tiffany Nguyen</h1>>
+    </div>
+
+    <!-- <script>
+      const headerWordList = ["a student", "a software engineer", "a team player"];
+      var speed = 50;
+      typeWriter();
+      
+      async function typeWriter(){
+        let changingWord = document.getElementById("changing-word");
+        while(true){
+          for (let p = 0; p < headerWordList.length; p++){
+            console.log("length", headerWordList.length)
+            console.log("p", p)
+            console.log("headerWordList[p]", headerWordList[p])
+            for (let j = 0; j < headerWordList[p].length; j++){
+              changingWord.innerHTML += headerWordList[p].charAt(j);
+              await delay(150)
+            }
+            await delay(750)
+            for (let j = 0; j < headerWordList[p].length; j++){
+              var htmlText = changingWord.innerHTML;
+              changingWord.innerHTML = htmlText.substring(0, htmlText.length-1)
+              await delay(150)
+            }
+          }
+        }
+      }
+      
+      function delay(milliseconds){
+          return new Promise(resolve => {
+              setTimeout(resolve, milliseconds);
+          });
+      }
+      
+      </script> -->
 
     <!-- About Me Section -->
     <section class="about-me-container">
       <div class="about-me-text-container">
-        <p class="about-me"> About Me </p>
-        <p class="bio"> I am a freshman majoring in Computer Science 
-          and Engineering at Santa Clara University. Between learning new topics in 
-          class and working on various projects in my free time, I am curious about all 
-          things code, from robotics to artificial intelligence, and I am passionate 
-          about learning all the different ways computer science can be applied to 
-          help others. </p>
+
+        <div class="about-me-heading-container">
+          <h1 class="about-me-heading"> I am a</h1>>
+          <h1 class="about-me-heading" id="changing-word"></h1>>
+        </div>
+    
+        <script>
+          const headerWordList = ["student", "developer", "dedicated team member", "problem solver", "lifelong learner", "software engineer"];
+          var speed = 50;
+          typeWriter();
+          
+          async function typeWriter(){
+            let changingWord = document.getElementById("changing-word");
+            while(true){
+              for (let p = 0; p < headerWordList.length; p++){
+                console.log("length", headerWordList.length)
+                console.log("p", p)
+                console.log("headerWordList[p]", headerWordList[p])
+                for (let j = 0; j < headerWordList[p].length; j++){
+                  changingWord.innerHTML += headerWordList[p].charAt(j);
+                  await delay(125)
+                }
+                await delay(750)
+                for (let j = 0; j < headerWordList[p].length; j++){
+                  var htmlText = changingWord.innerHTML;
+                  changingWord.innerHTML = htmlText.substring(0, htmlText.length-1)
+                  await delay(125)
+                }
+              }
+            }
+          }
+          
+          function delay(milliseconds){
+              return new Promise(resolve => {
+                  setTimeout(resolve, milliseconds);
+              });
+          }
+          
+          </script>
+
+        <p class="bio"> I am a sophomore majoring in Computer Science 
+          and Engineering at Santa Clara University. With experience in robotics, augmented 
+          reality, web development, and artificial intelligence, I am passionate about working on 
+          projects that allow me to learn more about emerging technologies and see all different 
+          ways computer science can be applied to help others! </p>
       </div>
       <!-- TODO: change image -->
       <img class="profile-image" src="images/main-page/profile.png">
