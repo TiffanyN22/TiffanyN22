@@ -201,15 +201,15 @@
   margin-top: 25px;
 }
 
-.coding-languages-row-1, .coding-languages-row-2{
-  margin-top: 20px;
+.coding-languages-row-1{
+  margin-top: 0px;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
-}
-
-.coding-languages-row-2{
-  margin-bottom: 25px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin-bottom: 30px;
 }
 
 .language-container {
@@ -224,6 +224,7 @@
   font-size: 20px;
   margin-left: 15px;/* TODO: not hard code or edit when screen size gets smaller */
   margin-right: 15px;
+  margin-top: 20px;
 }
 .purple-language{
   background-color: rgb(124, 0, 249);

@@ -2,6 +2,7 @@
   color:rgb(229, 193, 0)
 }
 
+.insight-container,
 .snake-ai-container,
 .metaphor-container,
 .wdwd-container,
@@ -24,6 +25,7 @@
 .focus-pal-container{
   border: 15px solid rgb(229, 193, 0);
 }
+.insight-container,
 .wdwd-container, 
 .mafia-moderator-container{
   border: 15px solid rgb(232, 24, 186);
@@ -44,7 +46,8 @@
 .wdwd-heading,
 .mafia-heading,
 .most-likely-to-heading,
-.focus-pal-heading {
+.focus-pal-heading,
+.insight-heading {
   font-weight: 500;
   font-size: 28px;
   text-align: center;
@@ -57,6 +60,7 @@
 .focus-pal-heading{
   color: rgb(229, 193, 0);
 }
+.insight-heading,
 .wdwd-heading, 
 .mafia-heading{
   color: rgb(232, 24, 186);
@@ -78,6 +82,7 @@
 .focus-pal-concepts{
   color: rgb(229, 193, 0);
 }
+.insight-concepts,
 .wdwd-concepts, 
 .mafia-concepts{
   color: rgb(232, 24, 186);
@@ -116,7 +121,8 @@ button{
   border-color: rgb(229, 193, 0);
 }
 .wdwd-github-button,
-.mafia-github-button, .mafia-demo-button{
+.mafia-github-button, .mafia-demo-button,
+.insight-github-button, .insight-demo-button{
   color: rgb(232, 24, 186);
   border-color: rgb(232, 24, 186);
 }
@@ -132,6 +138,7 @@ button{
   color: white;
   background-color: rgb(229, 193, 0);
 }
+.insight-github-button:hover, .insight-demo-button:hover,
 .wdwd-github-button:hover,
 .mafia-github-button:hover, .mafia-demo-button:hover{
   color: white;
@@ -174,7 +181,8 @@ img{
   object-fit: cover;
 }
 .app-container,
-.focus-pal-image-container{
+.focus-pal-image-container,
+.insight-image-container{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -190,6 +198,15 @@ img{
   margin-right:0;
 }
 .focus-pal-task-image, .focus-pal-calendar-image{
+  height: 250px;
+  width: auto;
+  /* margin: 20px 10px; */
+  margin-left: 0px;
+  margin-right: 20px;
+  border: none;
+}
+
+.insight-image{
   height: 250px;
   width: auto;
   /* margin: 20px 10px; */
@@ -217,6 +234,7 @@ img{
 }
 @media (max-width: 880px){
   .myGov-container,
+  .insight-container,
   .snake-ai-container, 
   .metaphor-container, 
   .wdwd-container, 
