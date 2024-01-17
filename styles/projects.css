@@ -2,6 +2,7 @@
   color:rgb(229, 193, 0)
 }
 
+.EtCoW-container,
 .insight-container,
 .snake-ai-container,
 .metaphor-container,
@@ -21,6 +22,7 @@
 .myGov-container{
   border: 15px solid rgb(124, 0, 249);
 }
+.EtCoW-container,
 .metaphor-container,
 .focus-pal-container{
   border: 15px solid rgb(229, 193, 0);
@@ -47,7 +49,8 @@
 .mafia-heading,
 .most-likely-to-heading,
 .focus-pal-heading,
-.insight-heading {
+.insight-heading,
+.EtCoW-heading {
   font-weight: 500;
   font-size: 28px;
   text-align: center;
@@ -57,7 +60,8 @@
   color: rgb(124, 0, 249);
 }
 .metaphor-heading,
-.focus-pal-heading{
+.focus-pal-heading,
+.EtCoW-heading{
   color: rgb(229, 193, 0);
 }
 .insight-heading,
@@ -79,7 +83,8 @@
   color: rgb(124, 0, 249);
 }
 .metaphor-concepts,
-.focus-pal-concepts{
+.focus-pal-concepts,
+.EtCoW-concepts{
   color: rgb(229, 193, 0);
 }
 .insight-concepts,
@@ -116,7 +121,8 @@ button{
   border-color: rgb(124, 0, 249);
 }
 .metaphor-github-button,
-.focus-pal-github-button, .focus-pal-website-button{
+.focus-pal-github-button, .focus-pal-website-button,
+.EtCoW-github-button, .EtCoW-demo-button{
   color: rgb(229, 193, 0);
   border-color: rgb(229, 193, 0);
 }
@@ -134,7 +140,8 @@ button{
   background-color: rgb(124, 0, 249);
 }
 .metaphor-github-button:hover,
-.focus-pal-github-button:hover, .focus-pal-website-button:hover{
+.focus-pal-github-button:hover, .focus-pal-website-button:hover,
+.EtCoW-github-button:hover, .EtCoW-demo-button:hover{
   color: white;
   background-color: rgb(229, 193, 0);
 }
@@ -167,6 +174,11 @@ img{
 }
 .snake-ai-image{
   width: 305px;
+  height: 315px;
+  object-fit: cover;
+}
+.EtCoW-image{
+  width: 425px;
   height: 315px;
   object-fit: cover;
 }
@@ -232,7 +244,8 @@ img{
     flex-direction: column;
   } */
 }
-@media (max-width: 880px){
+@media (max-width: 920px){
+  .EtCoW-container,
   .myGov-container,
   .insight-container,
   .snake-ai-container, 
@@ -258,6 +271,17 @@ img{
     width: 100%;
     max-height: 300px;
     min-height: 175px;
+    object-fit: contain;
+    padding-top: 15px;
+    border: none;
+  }
+  .EtCoW-image{
+    order: 1; 
+    height: 100%;
+    width: 100%;
+    max-height: 300px;
+    min-height: 175px;
+    max-width: 425px;
     object-fit: contain;
     padding-top: 15px;
     border: none;
