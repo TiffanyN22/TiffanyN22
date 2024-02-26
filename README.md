@@ -1,6 +1,7 @@
 Hello!  My name is Tiffany Nguyen, and I am a student majoring in Computer Science and Engineering at Santa Clara University passionate about learning about emerging technologies and learning all the different ways computer science can be applied to help others.
 
 At Santa Clara University, I am currently a...
+- 👩🏻‍💻 Javascript Developer in the Human Computer Interaction Lab
 - 💻 BroncoSec Events Coordinator in the Association of Computing Machinery
 - 🧬 Social Media Co-Chair in the Biomedical Engineering Society
 - 🚗 Data Collection Lead in Bronco Racing (SCU’s Formula SAE team)
