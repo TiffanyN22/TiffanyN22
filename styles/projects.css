@@ -209,6 +209,18 @@ img{
 .app1{
   margin-right:0;
 }
+.img1, .img2{
+  /* height: 175px; */
+  /* width: auto; */
+  width: 185px;
+  height: auto;
+  object-fit: cover;
+  border: none;
+}
+.img1{
+  margin-right:0;
+}
+
 .focus-pal-task-image, .focus-pal-calendar-image{
   height: 250px;
   width: auto;
@@ -294,6 +306,15 @@ img{
     max-height: 300px;
     min-height: 175px;
     object-fit: contain;
+  }
+  .img1, .img2{
+    margin-top: 15px;
+    max-height: 150px;
+    min-height: 87.5px;
+    object-fit: contain;
+  }
+  .img2{
+    margin-left: 10px;
   }
   .focus-pal-task-image, .focus-pal-calendar-image{
     width: 185px;
