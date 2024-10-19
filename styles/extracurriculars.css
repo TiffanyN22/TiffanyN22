@@ -11434,14 +11434,15 @@ input{
   margin-bottom: 15px;
 }
 
-.bmes-header,
+
+.aiaa-heading
 .acm-heading,
 .yellow-concept{
   color: rgb(229, 193, 0);
 }
 
 .frc-heading,
-.aiaa-heading,
+.bmes-header,
 .magenta-concept{
   color: rgb(232, 24, 186);
 }
