@@ -212,7 +212,8 @@ img{
 .img1, .img2{
   /* height: 175px; */
   /* width: auto; */
-  width: 185px;
+  width: 190px;
+  margin: 10px;
   height: auto;
   object-fit: cover;
   border: none;
@@ -269,7 +270,7 @@ img{
     flex-direction: column;
     min-height: 300px;
     margin-left: 30px;
-    margin-right: 30px;
+    margin-right: 20px;
   }
   .project-text{
     order: 2;
