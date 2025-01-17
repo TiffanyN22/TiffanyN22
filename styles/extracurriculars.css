@@ -11434,6 +11434,15 @@ input{
   margin-bottom: 15px;
 }
 
+.research-heading{
+  font-family: Saira Condensed, Arial;
+  font-weight: 500;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(232, 24, 186);
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
 
 .aiaa-heading
 .acm-heading,
@@ -11451,4 +11460,9 @@ input{
 .fsae-heading,
 .purple-concept{
   color: rgb(124, 0, 249);
+}
+
+
+.nurix-img{
+  width: 50%;
 }

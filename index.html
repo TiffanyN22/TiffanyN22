@@ -19,47 +19,13 @@
     <nav class="navbar"> 
       <a class="navbar-item" href="index.html"> Home </a>
       <a class="navbar-item" href="html/projects.html"> Coding Projects </a>
-      <a class="navbar-item" href="html/extracurriculars.html"> Extracurricular Projects </a>
+      <a class="navbar-item" href="html/extracurriculars.html"> Work Experience </a>
     </nav>
 
     <!-- heading -->
     <div class="name-heading-container">
       <h1 class="name-heading"> Hello World, it's Tiffany Nguyen</h1>>
     </div>
-
-    <!-- <script>
-      const headerWordList = ["a student", "a software engineer", "a team player"];
-      var speed = 50;
-      typeWriter();
-      
-      async function typeWriter(){
-        let changingWord = document.getElementById("changing-word");
-        while(true){
-          for (let p = 0; p < headerWordList.length; p++){
-            console.log("length", headerWordList.length)
-            console.log("p", p)
-            console.log("headerWordList[p]", headerWordList[p])
-            for (let j = 0; j < headerWordList[p].length; j++){
-              changingWord.innerHTML += headerWordList[p].charAt(j);
-              await delay(150)
-            }
-            await delay(750)
-            for (let j = 0; j < headerWordList[p].length; j++){
-              var htmlText = changingWord.innerHTML;
-              changingWord.innerHTML = htmlText.substring(0, htmlText.length-1)
-              await delay(150)
-            }
-          }
-        }
-      }
-      
-      function delay(milliseconds){
-          return new Promise(resolve => {
-              setTimeout(resolve, milliseconds);
-          });
-      }
-      
-      </script> -->
 
     <!-- About Me Section -->
     <section class="about-me-container">
@@ -107,9 +73,8 @@
         <p class="bio"> 
           I am a junior majoring in computer science and engineering and minoring in bioengineering at 
           Santa Clara University. With experience in full-stack web and app development,
-          API development, augmented reality, artificial intelligence, and robotics, I am passionate about 
-          applying my software skills to bioengineering problems, especially as it relates to imaging, data visualization,
-          simulations, and web development, though I also enjoy exploring other forms of emerging technology.</p>
+          API development, artificial intelligence, data visualization, augmented reality, and robotics, I am passionate about 
+          applying my software skills to projects with meaingful impact and exploring different forms of emerging technology.</p>
       </div>
       <!-- TODO: change image -->
       <img class="profile-image" src="images/main-page/profile.png">
@@ -131,9 +96,9 @@
         <!-- TODO: change image -->
         <img class="extracurriculars-image" src="images/main-page/extracurriculars.png">
         <div class="extracurriculars-text">
-          <p class="extracurriculars-heading">Extracurriculars Projects</p>
+          <p class="extracurriculars-heading">Work, Research, and Extracurriculars Experience</p>
           <!-- <p class="extracurriculars-info">TODO</p> -->
-          <button class="view-extracurriculars-button" onclick="window.location.href='html/extracurriculars.html';">View Extracurriculars</button>
+          <button class="view-extracurriculars-button" onclick="window.location.href='html/extracurriculars.html';">View Experience</button>
         </div>
       </div>
     </section>
